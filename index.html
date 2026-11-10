@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Privacy policy for Carrom Crest version 2.0.1, a carrom board game for Android published by Carrom Crest.">
+<meta name="description" content="Privacy policy for Carrom Crest version 2.0.2, a carrom board game for Android published by Carrom Crest.">
 <meta name="color-scheme" content="light dark">
 <title>Privacy Policy — Carrom Crest</title>
 <style>
@@ -87,8 +87,8 @@
   <p class="app">Carrom Crest — Android game</p>
   <dl class="meta">
     <dt>Publisher</dt><dd>Carrom Crest (India)</dd>
-    <dt>App version</dt><dd>2.0.1 (package <code>dev.carromcrest.game</code>)</dd>
-    <dt>Effective date</dt><dd>5 November 2026</dd>
+    <dt>App version</dt><dd>2.0.2 (package <code>dev.carromcrest.game</code>)</dd>
+    <dt>Effective date</dt><dd>10 November 2026</dd>
     <dt>Contact</dt><dd><a href="mailto:carromcrest@gmail.com">carromcrest@gmail.com</a></dd>
   </dl>
 </header>
@@ -114,19 +114,19 @@
 
 <section id="intro" aria-labelledby="h-intro">
   <h2 id="h-intro">1. Introduction and scope</h2>
-  <p>This privacy policy explains how Carrom Crest ("the app", "the game"), a carrom board game for Android published by Carrom Crest ("the publisher", "we"), handles information. It applies to <strong>version 2.0.1</strong> of the app. If a future version handles information differently, this policy will be updated before that version is released (see <a href="#changes">section 12</a>).</p>
-  <p>The game does not have an account system and does not connect to any server operated by the publisher. Almost everything is played on your own phone. The one exception is <strong>Play with friends</strong>, which connects phones directly to each other on the same Wi-Fi network or hotspot (see <a href="#rooms">section 4A</a>).</p>
+  <p>This privacy policy explains how Carrom Crest ("the app", "the game"), a carrom board game for Android published by Carrom Crest ("the publisher", "we"), handles information. It applies to <strong>version 2.0.2</strong> of the app. If a future version handles information differently, this policy will be updated before that version is released (see <a href="#changes">section 12</a>).</p>
+  <p>The game does not have an account system. Almost everything is played on your own phone. The one exception is <strong>Play with friends</strong>, which connects you to the friends in your room, either over the internet or on the same Wi-Fi network (see <a href="#rooms">section 4A</a>).</p>
 </section>
 
 <section id="collection" aria-labelledby="h-collection">
   <h2 id="h-collection">2. Information collection and sharing</h2>
   <div class="note">
-    <p><strong>The publisher does not collect information from you.</strong> Nothing you do in the game is sent to the publisher. Your player name and player card are shared only with the friends you join in a room, as described in <a href="#rooms">section 4A</a>.</p>
+    <p><strong>The publisher does not keep information about you.</strong> Your progress is not sent to the publisher. Your player name and player card go only to the friends in a room you choose to open or join. In online rooms they pass through the game's room service, which stores nothing, as described in <a href="#rooms">section 4A</a>.</p>
   </div>
   <ul>
-    <li>The app requests Android's <strong>internet</strong> and <strong>network state</strong> permissions. Play with friends uses them to connect phones on the same network, and they allow for the advertising described in <a href="#third-party">section 10</a> if it is ever turned on.</li>
+    <li>The app requests Android's <strong>internet</strong> and <strong>network state</strong> permissions. Play with friends uses them to connect the phones in a room, and they are used to show the advertising described in <a href="#third-party">section 10</a>.</li>
     <li>The app requests <strong>vibration</strong> for optional haptic feedback, which you can turn off in Settings. Libraries included in the app also declare standard Android permissions they use for their own operation; these do not give the publisher any of your information.</li>
-    <li>The app does not include analytics, crash-reporting, account sign-in or tracking services.</li>
+    <li>The app does not include analytics, crash-reporting or account sign-in services, and does not track you. Advertising is described in <a href="#third-party">section 10</a>.</li>
     <li>The game does not read your location, contacts, photos, files, microphone or camera.</li>
   </ul>
   <p>"Not collecting" information is different from "not storing" it. The game does save game information on your own device so that your progress is kept between sessions. That information stays on your device and is described in the next sections.</p>
@@ -144,7 +144,7 @@
       <tr><td>Graphics cache</td><td>The game engine stores compiled graphics shaders so the game loads faster. This cache contains no personal information.</td></tr>
     </tbody>
   </table>
-  <p>Virtual coins in the game are earned only by playing. Crest Cash, the second in-game currency, works the same way. Neither has any real-money value, can be bought in version 2.0.1 or can be exchanged for money. Your story progress, titles and player card are saved in the same place as the rest of your progress.</p>
+  <p>Virtual coins in the game are earned only by playing. Crest Cash, the second in-game currency, works the same way. Neither has any real-money value, can be bought in version 2.0.2 or can be exchanged for money. Your story progress, titles and player card are saved in the same place as the rest of your progress.</p>
 </section>
 
 <section id="profile" aria-labelledby="h-profile">
@@ -159,20 +159,24 @@
 
 <section id="rooms" aria-labelledby="h-rooms">
   <h2 id="h-rooms">4A. Play with friends (rooms)</h2>
-  <p>When you open or join a room, phones on the same Wi-Fi network or hotspot connect directly to each other. There is no server in between, and nothing is sent to the publisher.</p>
+  <p>A room only exists when you choose to open or join one. There are two kinds:</p>
+  <ul>
+    <li><strong>Online rooms (6-digit code)</strong> connect phones over the internet through the game's room service, which is hosted on Cloudflare. The room service passes your room's messages between the phones in it. It holds them in memory only while the room is open, does not save them to any disk or database, and forgets the room when it closes. Connecting to it means Cloudflare handles your phone's IP address and basic connection details under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's own privacy policy</a>. These connections are encrypted.</li>
+    <li><strong>Same Wi-Fi rooms (5-digit code)</strong> connect phones directly on the same Wi-Fi network or hotspot, with no server in between. The code is worked out from your phone's address on the local network, and anyone on that same network who has the code can try to join. These connections are not encrypted.</li>
+  </ul>
   <ul>
     <li><strong>What the other phones in your room receive:</strong> your player name, your chosen sigil and title, and the moves of the match (striker position, aim and shots).</li>
-    <li><strong>The 5-digit room code</strong> is worked out from your phone's address on the local network, and anyone on that same network who has the code can try to join the room.</li>
+    <li><strong>Anyone who has your room's code</strong> can try to join until the match starts, so share it only with people you want to play with.</li>
     <li><strong>There is no chat</strong> and no way to send messages or files to other players.</li>
     <li>Nothing is kept after the match except your own result, on your own phone.</li>
   </ul>
-  <p>A room only exists when you choose to open or join one. Use a nickname if you would rather not show your real name to the people in your room.</p>
+  <p>Use a nickname if you would rather not show your real name to the people in your room.</p>
 </section>
 
 <section id="clipboard" aria-labelledby="h-clipboard">
   <h2 id="h-clipboard">5. Clipboard and the Share feature</h2>
   <p>The game has a Share option. When you tap it, the game copies a short invitation text to your device's clipboard so that you can paste it into a message yourself. The text mentions the game and your current level. It does not include your player name.</p>
-  <p>The game only <em>writes</em> to the clipboard when you tap Share. It never <em>reads</em> the clipboard. What you do with the copied text, and with which app you paste it, is your choice, and that other app's privacy policy applies to it.</p>
+  <p>The game only <em>writes</em> to the clipboard when you tap Share, or tap to copy a room code or your player tag. It never <em>reads</em> the clipboard. What you do with the copied text, and with which app you paste it, is your choice, and that other app's privacy policy applies to it.</p>
 </section>
 
 <section id="clock" aria-labelledby="h-clock">
@@ -199,19 +203,19 @@
 
 <section id="children" aria-labelledby="h-children">
   <h2 id="h-children">9. Children's privacy</h2>
-  <p>Carrom Crest is a game suitable for players of all ages. Version 2.0.1 does not ask for personal information, shows no advertising, has no chat, no in-app purchases and no account sign-in. Players can only meet in a room by being on the same network and sharing a code, and they see only each other's player name, sigil and title.</p>
+  <p>Carrom Crest is a game suitable for players of all ages. Version 2.0.2 does not ask for personal information, shows only family-safe, non-personalised ads, has no chat, no in-app purchases and no account sign-in. Players can only meet in a room by sharing its code, and they see only each other's player name, sigil and title.</p>
   <p>The only free-text entry is the optional player name. Children should use a nickname rather than their real full name. A parent or guardian can remove a child's game data at any time with <strong>Settings → Delete all my data</strong> or by uninstalling the app.</p>
   <p>If you are a parent or guardian and have a question about how the game handles information, please contact the publisher at the address in <a href="#contact">section 13</a>.</p>
 </section>
 
 <section id="third-party" aria-labelledby="h-third-party">
   <h2 id="h-third-party">10. Third-party services</h2>
-  <p>Version 2.0.1 sends nothing to any third-party service from the game itself. In particular:</p>
+  <p>In version 2.0.2 the game connects to two third-party services: Google AdMob for advertising, and the hosting behind online rooms:</p>
   <ul>
-    <li><strong>Advertising:</strong> Google's AdMob library is included in the app, but it is switched off in this version: the game does not start it and shows no ads. If ads are turned on in a future version, this policy will be updated first.</li>
+    <li><strong>Advertising:</strong> the game shows ads from Google AdMob: rewarded ads you choose to watch, and an occasional full-screen ad between matches, never during play. Ads are requested as child-directed and family-safe (G-rated), are not personalised, and the game does not use your advertising ID. To deliver an ad, Google receives limited technical information such as your IP address and basic device and app details, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
     <li><strong>In-app purchases:</strong> disabled. The in-game store sells nothing for real money in this version.</li>
     <li><strong>Google Play Games sign-in:</strong> disabled.</li>
-    <li><strong>Internet multiplayer:</strong> not available. Rooms work only between phones on the same network.</li>
+    <li><strong>Online rooms:</strong> hosted on Cloudflare, only when you open or join an online room (see <a href="#rooms">section 4A</a>).</li>
     <li><strong>Analytics and crash reporting:</strong> not included.</li>
   </ul>
   <p>The app is built with the open-source Godot game engine and standard Android libraries.</p>
@@ -226,7 +230,7 @@
 
 <section id="changes" aria-labelledby="h-changes">
   <h2 id="h-changes">12. Changes to this policy</h2>
-  <p>This policy describes version 2.0.1 of Carrom Crest. If a future version changes how the app handles information, for example by turning on advertising, purchases, sign-in or internet play, this policy will be updated before that version is released. The new effective date will be shown at the top of this page.</p>
+  <p>This policy describes version 2.0.2 of Carrom Crest. If a future version changes how the app handles information, for example by turning on purchases or sign-in, this policy will be updated before that version is released. The new effective date will be shown at the top of this page.</p>
   <p>Please review this page from time to time. If you continue using the app after an updated policy takes effect, the updated policy applies.</p>
 </section>
 
@@ -239,7 +243,7 @@
 </section>
 
 <footer>
-  <p>Privacy Policy — Carrom Crest 2.0.1 · Effective 5 November 2026 · Publisher: Carrom Crest, India</p>
+  <p>Privacy Policy — Carrom Crest 2.0.2 · Effective 10 November 2026 · Publisher: Carrom Crest, India</p>
 </footer>
 
 </article>
